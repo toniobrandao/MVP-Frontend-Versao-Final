@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bagagem para a Viagem</title>
+    <link rel="stylesheet" href="login-register.css" />
+    <link rel="icon" href="./img/checkbox-favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Registre-se</span></div>
+        <form id="registrationForm">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              placeholder="Usuário"
+              id="username-field"
+              required
+              autocomplete="username"
+            />
+          </div>
+          <div class="row">
+            <i class="fas fa-envelope"></i>
+            <input
+              type="text"
+              placeholder="E-mail"
+              id="email-field"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              placeholder="Senha"
+              id="password_1"
+              autocomplete="new-password"
+              required
+            />
+          </div>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              placeholder="Repita a senha"
+              id="password_2"
+              required
+              autocomplete="new-password"
+            />
+          </div>
+          <div class="row button">
+            <input type="button" value="Criar conta" id="submitButton" />
+          </div>
+          <div class="signup-link" id="api-message"></div>
+          <div class="signup-link">
+            Já possui conta? <a href="login.html">Ir para login</a>
+          </div>
+          <div class="signup-link">
+            <a href="../index.html">Voltar para a página principal</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="register.js"></script>
+</html>
